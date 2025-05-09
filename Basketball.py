@@ -39,11 +39,19 @@ class BasketballPlayer:
         return f"{self.name}: Current Avg = {self.point_average:.2f}, Predicted Avg = {self.predict_average_for_season():.2f}"
 
 if __name__ == "__main__":
-    # Example players
     player1 = BasketballPlayer("Ibrahim Sesay", 51, 1300, 1040)
     player2 = BasketballPlayer("Abdoullah S", 49, 980, 830)
 
     print(player1)
+    print("Calculated Avg:", player1.calculate_point_average())
+    print("Predicted Avg:", player1.predict_average_for_season())
     print(player1.predict_injury_risk())
+
     print(player2)
+    print("Calculated Avg:", player2.calculate_point_average())
+    print("Predicted Avg:", player2.predict_average_for_season())
     print(player2.predict_injury_risk())
+
+    # Simple test checks
+    assert player1.calculate_point_average() == 1300 / 51
+    assert player2.calculate_point_average() == 980 / 49
