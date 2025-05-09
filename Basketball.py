@@ -55,3 +55,21 @@ if __name__ == "__main__":
     # Simple test checks
     assert player1.calculate_point_average() == 1300 / 51
     assert player2.calculate_point_average() == 980 / 49
+
+#Documentation:
+#Our project simulates a basketball player's performance tracking system. 
+#It calculates average points per game, predicts future season averages based on 
+# previous performance, and estimates injury risk tied to performance intensity. 
+# The core of the system is a Python class called `BasketballPlayer`, which encapsulates 
+# relevant player data and analytics methods. The class includes functions to compute averages, 
+# simulate growth trends, and assess injury risk based on a scoring threshold. The design prioritizes
+# clarity and modularity, with each method handling a specific task for maintainability.
+
+#Open Terminal or Command Prompt. Clone the GitHub Repository and run the code.
+
+#The output shows each player’s current average points per game, their predicted average for the next season, and an injury risk assessment based on performance intensity. 
+# A high injury risk indicates the player’s average exceeds a set threshold (default is 20 points per game).
+
+#Python Official Documentation – Classes
+#URL: https://docs.python.org/3/tutorial/classes.html
+#Used to understand and structure the BasketballPlayer class with attributes and methods in an object-oriented design.
